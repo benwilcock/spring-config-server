@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: spring-config-server
+  description: Spring Cloud Config Server
+  tags:
+    - java
+    - spring
+    - web
+    - tanzu
+    - Cloud
+    - config
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-config-server'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
