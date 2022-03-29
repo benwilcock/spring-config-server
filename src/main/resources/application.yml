@@ -14,6 +14,8 @@ spring:
         instance:
           service-base-url: http://${spring.application.name}.${NAMESPACE}.${DOMAIN}
 management:
+  server: 
+    port: 8080
   endpoints:
     web:
       exposure:
