@@ -1,7 +1,9 @@
 spring:
+  application:
+    name: spring-config-server
   boot:
     admin:
       client:
         url: http://spring-boot-admin.default.svc.cluster.local
         instance:
-          service-base-url: http://${spring.application.name}.${NAMESPACE}.${APPS_DOMAIN}
+          service-base-url: http://${spring.application.name}.${NAMESPACE}.${DOMAIN}
