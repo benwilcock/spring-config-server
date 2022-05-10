@@ -17,3 +17,6 @@ management:
     health:
       show-details: always
       
+logging:
+  file:
+    name: "/tmp/spring-config-server.log"
