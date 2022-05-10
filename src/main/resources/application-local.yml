@@ -4,4 +4,4 @@ spring:
       client:
         url: http://localhost:8080
         instance:
-          service-base-url: http://${DOMAIN}:${SERVER_PORT}
+          service-base-url: http://${DOMAIN}:${INGRESS_PORT}

@@ -4,4 +4,4 @@ spring:
       client:
         url: http://spring-boot-admin.default.svc.cluster.local
         instance:
-          service-base-url: http://${spring.application.name}.${NAMESPACE}.${DOMAIN}:${PORT}
+          service-base-url: http://${spring.application.name}.${NAMESPACE}.${DOMAIN}:${INGRESS_PORT}
